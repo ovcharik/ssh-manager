@@ -1,0 +1,29 @@
+{
+  "name": "ssh-manager",
+  "version": "0.0.0",
+  "description": "Simple manager for your ssh connections.",
+  "main": "./lib/index.js",
+  "scripts": {
+    "start": "./node_modules/coffee-script/bin/coffee src/index.coffee",
+    "build": "./node_modules/coffee-script/bin/coffee -o lib -c src"
+  },
+  "bin": {
+    "ssh-manager": "./bin/ssh-manager"
+  },
+  "keywords": [
+    "ssh",
+    "manager"
+  ],
+  "author": {
+    "name" : "Maksim Ovcharik",
+    "email": "<maksim.ovcharik@gmail.com>"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "blessed": "^0.1.81",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.10.0"
+  }
+}
