@@ -15,7 +15,7 @@
     "manager"
   ],
   "author": {
-    "name" : "Maksim Ovcharik",
+    "name": "Maksim Ovcharik",
     "email": "<maksim.ovcharik@gmail.com>"
   },
   "license": "MIT",
@@ -24,6 +24,7 @@
     "underscore": "^1.8.3"
   },
   "devDependencies": {
-    "coffee-script": "^1.10.0"
+    "coffee-script": "^1.10.0",
+    "git-hooks": "^1.0.2"
   }
 }

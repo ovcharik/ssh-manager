@@ -1,9 +1,10 @@
 _      = require 'underscore'
 fs     = require 'fs'
 events = require 'events'
+path   = require 'path'
 
 homeDir = process.env.HOME || process.env.USERPROFILE
-defaultConfigPath = "#{homeDir}/.ssh-manager.json"
+defaultConfigPath = path.join homeDir, ".ssh-manager.json"
 
 class List extends events.EventEmitter
   _recordToRow = (record) ->
