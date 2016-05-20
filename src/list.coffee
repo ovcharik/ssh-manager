@@ -33,7 +33,7 @@ class List extends events.EventEmitter
 
   _save = (file, records) ->
     throw new Error("Not valid records.") unless _(records).every(_isValidRecord)
-    records = JSON.stringify(records)
+    records = JSON.stringify(records, null, 2)
     fs.writeFileSync file, records, 'utf8'
 
 
